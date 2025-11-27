@@ -8,7 +8,7 @@
     <script src="index.js"></script>
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav>
             <a href="">HOME</a>
             <a href="">ELSE</a>
@@ -18,11 +18,37 @@
         </nav>
     </header>
     <main>
-        <div id="main_text"></div>
+        <div id="main_text">
+            <h2>Hello, and welcome to my website!</h3>
+            <p>
+            As you can see, it is still a work in progress.
+            If you could come back in a few days I'm sure I'll have something more interesting for you.
+            <br><br>Thanks for your understanding. If you want to, you can leave your suggestions for the website
+            in the form below! But please don't touch anything else, especially not that button at the bottom, 
+            I'm not sure what it does yet, but I made sure to label it "don't press" so that no one 
+            presses it by accident.
+            </p>
+        </div>
+
+        <form id="form" action="" method="get" onsubmit="return form_validation()">
+            <label class="label" for="name">Name:</label><br>
+            <input class="input" id="name" name="Name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input class="input" id="email" name="Email"><br><br>
+
+            <label for="msg">Suggestions:</label><br>
+            <textarea class="input" id="msg" name="Suggestions" style="height: 100px;"></textarea><br>
+
+            <button type="submit">Send</button>
+        </form>
+        <a href="#header">
+            <button id="butn">DON'T PRESS!</button>
+        </a>
     </main>
 
     <footer>
-
+        <p>@copyright ME 2025</p>
     </footer>
 </body>
 </html>

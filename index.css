@@ -4,13 +4,16 @@
     --bgc2: rgb(25, 25, 25);
     --bgc3: rgb(19, 19, 19);
     --bgc4: rgb(12, 12, 12);
-    --txtc: white;
+    --bgc5: rgb(3, 3, 3);
+
+    --txtc: rgb(248, 248, 248);
 }
 
 body {
     margin: 0px;
     font-family: sans-serif;
     background-color: var(--bgc4);
+    color: var(--txtc);
 }
 
 header {
@@ -41,20 +44,54 @@ header nav a{
 }
 
 header nav a:hover {
-    /* position: relative;
-    z-index: 4; */
     box-shadow: inset 0px 0px 10px 1px var(--bgc0);
 }
+
 
 main {
     position: relative;
     z-index: 3;
-
+    
     background-color: var(--bgc3);
+    text-align: center;
     margin-left: 10%;
     margin-right: 10%;
     height: 800px;
     width: auto;
 
     box-shadow: 1px 0px 20px 5px black;
+}
+
+#main_text {
+    padding: 5% 20% 2% 20%;
+}
+
+.input {
+    width: 200px;
+    background-color: rgb(214, 214, 214);
+}
+
+#butn {
+    margin-top: 200px;
+    color: red;
+    font-size: 15px;
+    padding: 5px;
+
+}
+
+button:hover {
+    cursor:pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    background-color: var(--bgc2);
+    height: 70px;
+    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 12px;
 }
