@@ -4,7 +4,6 @@
     --bgc2: rgb(25, 25, 25);
     --bgc3: rgb(19, 19, 19);
     --bgc4: rgb(12, 12, 12);
-    --bgc5: rgb(3, 3, 3);
 
     --txtc: rgb(248, 248, 248);
 }
@@ -51,7 +50,10 @@ header nav a:hover {
 main {
     position: relative;
     z-index: 3;
-    
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr;
+
     background-color: var(--bgc3);
     text-align: center;
     margin-left: 10%;
@@ -63,7 +65,7 @@ main {
 }
 
 #main_text {
-    padding: 5% 20% 2% 20%;
+    padding: 5% 20% 0% 20%;
 }
 
 .input {
@@ -72,7 +74,7 @@ main {
 }
 
 #butn {
-    margin-top: 200px;
+    margin-top: 20%;
     color: red;
     font-size: 15px;
     padding: 5px;
@@ -93,5 +95,42 @@ footer {
     width: auto;
     margin-left: 10%;
     margin-right: 10%;
-    font-size: 12px;
+    font-size: 15px;
+}
+
+
+@media (max-width: 650px) {
+    #main_text {
+    padding: 5% 10% 0% 10%;
+}
+}
+
+
+@media (max-width: 470px) {
+    main {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+    header {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+    footer {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+}
+
+@media (max-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+
+    header nav a {
+        font-size: 14px;
+    }
+
+    #butn {
+        margin-top: 30%;
+    }
 }
