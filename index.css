@@ -65,7 +65,7 @@ main {
 }
 
 #main_text {
-    padding: 5% 20% 0% 20%;
+    padding: 4% 20% 2% 20%;
 }
 
 .input {
@@ -84,6 +84,8 @@ main {
 button:hover {
     cursor:pointer;
 }
+
+
 
 footer {
     display: flex;
