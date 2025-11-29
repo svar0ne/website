@@ -53,19 +53,19 @@ main {
 
     display: grid;
     grid-template-rows: 1fr 1fr 2fr;
+    height: 800px;
 
     background-color: var(--bgc3);
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
-    height: 800px;
     width: auto;
 
     box-shadow: 1px 0px 20px 5px black;
 }
 
 #main_text {
-    padding: 4% 20% 2% 20%;
+    margin: 4% 20% 2% 20%;
 }
 
 .input {
@@ -77,8 +77,10 @@ main {
     margin-top: 20%;
     color: red;
     font-size: 15px;
-    padding: 5px;
-
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 0.5px solid black;
+    border-radius: 2px;
 }
 
 button:hover {
@@ -103,7 +105,7 @@ footer {
 
 @media (max-width: 650px) {
     #main_text {
-    padding: 5% 10% 0% 10%;
+    margin: 5% 10% 0% 10%;
 }
 }
 
@@ -132,7 +134,5 @@ footer {
         font-size: 14px;
     }
 
-    #butn {
-        margin-top: 30%;
-    }
+
 }

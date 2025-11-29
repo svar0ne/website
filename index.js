@@ -59,7 +59,7 @@ function func2() {
 
 function func3() {
     document.getElementById("main_text").innerHTML = "<p>STOP PRESSING IT!!<br><br>can't you see you're breaking my website?!</p>"
-    document.getElementById("form").innerHTML = '<label for="n1">Name</label> <input id="n1"></input><br><label for="n2">Last name</label> <input id="n2"></input> <label for="n3">Last last name</label> <input id="n3"></input><br> <label for="n3">Lastest last name</label> <input id="n3"></input>'
+    document.getElementById("form").innerHTML = '<label for="n1">Name</label> <input id="n1"></input><br><label for="n2">Last name</label> <input id="n2"></input> <label for="n3">Last last name</label> <input id="n3"></input><br> <label for="n4">Lastest last name</label> <input id="n4"></input>'
 
     document.getElementById("butn").onclick = func4;
 }
@@ -87,22 +87,86 @@ function func5() {
     document.getElementById("a5").innerText = "OTHER"
     document.getElementById("butn").innerText = "DON'T PRESS!"
     document.getElementById("butn_a").style.marginLeft = "50%"
-    document.getElementById("butn").style.marginTop = "20%"
+    document.getElementById("butn_a").style.marginTop = "20%"
     document.getElementById("butn").style.backgroundColor = "rgba(223, 223, 223, 1)"
     document.getElementById("butn").style.color = "rgba(220, 217, 217, 1)"
     document.getElementById("butn").style.border = "1px solid rgba(220, 220, 220, 1)"
-   
-    document.getElementById("butn").onclick = func6;
+
+    document.getElementById("butn").onclick = func6
 }
 
 function func6() {
-    document.getElementById("butn_a").style.marginLeft = "0%"
-    document.getElementById("butn").style.marginTop = "10%"
+    document.getElementById("butn_a").style.marginLeft = ""
+    document.getElementById("butn_a").style.marginTop = ""
     document.getElementById("butn").style.backgroundColor = "rgba(255, 255, 255, 1)"
     document.getElementById("butn").style.color = "red"
     document.getElementById("butn").style.border = "0.5px solid black"
     document.getElementById("butn").style.borderRadius = "2px"
     document.getElementById("butn").style.padding = "8px"
 
-    document.getElementById("main_text").innerHTML = "<p><br><br></p>"
+    document.getElementById("main_text").innerHTML = "<p>oh my god.. NOW LOOK WHAT YOU'VE DONE!!<br><br>My navbar is gone! I put a lot of time into that!<br> Do you not have any respect for other people's work?!</p>"
+    document.getElementById("header").innerHTML = ""
+
+    document.getElementById("butn").addEventListener("mouseover", func7)
 }
+
+function func7() {
+    document.getElementById("butn_a").style.marginRight = "50%"
+    document.getElementById("butn_a").style.marginBottom = "50px"
+
+    document.getElementById("main_text").innerHTML = "<p><br><br>HEY! Are you even listening to me??</p>"
+
+    document.getElementById("butn").addEventListener("mouseover", func8)
+}
+
+function func8() {
+    document.getElementById("butn_a").style.marginRight = ""
+    document.getElementById("butn_a").style.marginLeft = "50%"
+    document.getElementById("butn_a").style.marginBottom = "100px"
+
+    document.getElementById("main_text").innerHTML = "<p><br><br>I SAID DON'T TOUCH IT!!</p>"
+
+    document.getElementById("butn").addEventListener("mouseover", func9)
+}
+
+function func9() {
+    document.getElementById("butn_a").style.marginLeft = ""
+    document.getElementById("butn_a").style.marginBottom = ""
+
+    document.getElementById("main_text").innerHTML = "<p><br><br>JUST. LEAVE. IT.</p>"
+
+    document.getElementById("butn_link").innerHTML = '<img src="bilder/01.png" width="100px" height="auto" alt="box0">'
+    document.getElementById("butn_link").addEventListener("mouseover", function() {this.style.cursor = 'url("bilder/hammer3.png"), auto'});
+    
+    document.getElementById("butn_link").onclick = func10
+}
+
+function func10() {
+    document.getElementById("butn_link").innerHTML = '<img src="bilder/02.png" width="100px" height="auto" alt="box0">'
+
+    document.getElementById("main_text").innerHTML = "<p><br><br>WHY DO YOU HAVE A HAMMER?!</p>"
+    document.getElementById("butn_link").onclick = func11
+}
+
+function func11() {
+    document.getElementById("butn_link").innerHTML = '<img src="bilder/03.1.png" width="110px" height="auto" alt="box0">'
+
+    document.getElementById("main_text").innerHTML = "<p><br><br>WHAT IS WRONG WITH YOU?</p>"
+    document.getElementById("butn_link").onclick = func12
+}
+
+function func12() {
+    document.getElementById("butn_link").innerHTML = '<button id="butn"></button>'
+    document.getElementById("butn").innerText = "DON'T PRESS!"
+    document.getElementById("butn").style.marginTop = "6%"
+
+    document.getElementById("main_text").innerHTML = "<p><br><br>I can't with you.. It's like talking to wall..</p>"
+    document.getElementById("butn_link").onclick = func13
+}
+
+function func13() {
+    document.getElementById("header").style.height ="0px"
+    document.getElementById("main_text").innerHTML = "<p>well then.. There goes my header..<br><br>you must be very proud of yourself</p>"
+    document.getElementById("main_text").style.marginTop = "15%"
+}
+
