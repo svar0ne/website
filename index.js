@@ -137,29 +137,31 @@ function func9() {
 
     document.getElementById("main_text").innerHTML = "<p><br><br>JUST. LEAVE. IT.</p>"
 
-    document.getElementById("imgid").innerHTML = '<img src="bilder/01.png" width="100px" height="auto" alt="box0">'
-    document.getElementById("imgid").addEventListener("mouseover", function() {this.style.cursor = 'url("bilder/hammer3.png"), auto'});
+    document.getElementById("imgid").innerHTML = '<img id="box" src="bilder/01.png" width="100px" height="auto" alt="box0">'
+    document.getElementById("imgid").addEventListener("mouseover", function() {document.getElementById("box").style.cursor = 'url("bilder/hammer3.png"), auto'});
     
 
-    document.getElementById("imgid").onclick = func10
+    document.getElementById("box").onclick = func10
 }
 
 function func10() {
-    document.getElementById("imgid").innerHTML = '<img src="bilder/02.png" width="100px" height="auto" alt="box0">'
+    document.getElementById("imgid").innerHTML = '<img id="box" src="bilder/02.png" width="100px" height="auto" alt="box0">'
 
     document.getElementById("main_text").innerHTML = "<p><br><br>WHY DO YOU HAVE A HAMMER?!</p>"
-    document.getElementById("imgid").onclick = func11
+    document.getElementById("box").onclick = func11
 }
 
 function func11() {
-    document.getElementById("imgid").innerHTML = '<img src="bilder/03.1.png" width="110px" height="auto" alt="box0">'
-
+    document.getElementById("imgid").innerHTML = '<img id="box" src="bilder/03.1.png" width="110px" height="auto" alt="box0">'
     document.getElementById("main_text").innerHTML = "<p><br><br>WHAT IS WRONG WITH YOU?</p>"
-    document.getElementById("imgid").onclick = func12
-
+    
     document.getElementById("butn").removeEventListener("mouseover", func7)
     document.getElementById("butn").removeEventListener("mouseover", func8)
     document.getElementById("butn").removeEventListener("mouseover", func9)
+
+    document.getElementById("box").onclick = func12
+
+
 }
 
 function func12() {
