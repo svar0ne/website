@@ -54,12 +54,12 @@ main {
     display: grid;
     grid-template-rows: 1fr 1fr 2fr;
     height: 800px;
+    width: auto;
 
     background-color: var(--bgc3);
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
-    width: auto;
 
     box-shadow: 1px 0px 20px 5px black;
 }
@@ -111,6 +111,11 @@ footer {
     font-size: 15px;
 }
 
+@media (min-width: 1400px) {
+    main {
+        height: 1000px
+    }
+}
 
 @media (max-width: 650px) {
     #main_text {
