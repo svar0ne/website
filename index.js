@@ -39,7 +39,7 @@ function func1() {
     document.getElementById("main_text").innerHTML = "<p>NOOO! what did you do??<br><br>why is my form gone??</p>"
 
     document.getElementById("butn").onclick = func2;
-    document.getElementById("butn").style.marginTop = "10%"
+    document.getElementById("butn").style.marginTop = "0%"
 }
 
 function func2() {
